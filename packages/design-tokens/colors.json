@@ -1,0 +1,74 @@
+{
+    "props": {
+        "color-dark-mode-base": {
+            "value": "#00e8e0",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-light-mode-base": {
+            "value": "#2072e6",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-black": {
+            "value": "#000000",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays90": {
+            "value": "#1a1a1a",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays80": {
+            "value": "#333333",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays70": {
+            "value": "#4d4d4d",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays30": {
+            "value": "#b3b3b3",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays20": {
+            "value": "#cccccc",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays10": {
+            "value": "#e6e6e6",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-grays5": {
+            "value": "#f2f2f2",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-white": {
+            "value": "#ffffff",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-purple-base": {
+            "value": "#8132ef",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-success-base": {
+            "value": "#009900",
+            "type": "color",
+            "category": "background-color"
+        },
+        "color-warning-base": {
+            "value": "#ffcc00",
+            "type": "color",
+            "category": "background-color"
+        }
+    }
+}
