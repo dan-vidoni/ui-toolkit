@@ -1,72 +1,32 @@
 {
     "props": {
-        "color-dark-mode-base": {
-            "value": "#00e8e0",
+        "color-dark-primary-main": {
+            "value": "#90caf9",
             "type": "color",
             "category": "background-color"
         },
-        "color-light-mode-base": {
-            "value": "#2072e6",
+        "color-light-primary-main": {
+            "value": "#7986cb",
             "type": "color",
             "category": "background-color"
         },
-        "color-black": {
-            "value": "#000000",
+        "color-dark-primary-light": {
+            "value": "#a6d4fa",
             "type": "color",
             "category": "background-color"
         },
-        "color-grays90": {
-            "value": "#1a1a1a",
+        "color-light-primary-light": {
+            "value": "#3f51b5",
             "type": "color",
             "category": "background-color"
         },
-        "color-grays80": {
-            "value": "#333333",
+        "color-dark-primary-dark": {
+            "value": "#303f9f",
             "type": "color",
             "category": "background-color"
         },
-        "color-grays70": {
-            "value": "#4d4d4d",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-grays30": {
-            "value": "#b3b3b3",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-grays20": {
-            "value": "#cccccc",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-grays10": {
-            "value": "#e6e6e6",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-grays5": {
-            "value": "#f2f2f2",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-white": {
-            "value": "#ffffff",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-purple-base": {
-            "value": "#8132ef",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-success-base": {
-            "value": "#009900",
-            "type": "color",
-            "category": "background-color"
-        },
-        "color-warning-base": {
-            "value": "#ffcc00",
+        "color-light-primary-dark": {
+            "value": "#648dae",
             "type": "color",
             "category": "background-color"
         }

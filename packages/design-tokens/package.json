@@ -4,15 +4,21 @@
   "description": "Colors, typography, size and spacing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "gulp",
+    "prepublishOnly": "npm run build"
   },
   "files": [
-    "colors.json"
+    "dist/"
   ],
   "author": "",
   "license": "ISC",
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "f74c7452fdcb963127e8f0c742dffbc09bc9d04d"
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-theo": "^2.0.1",
+    "plugin-error": "^1.0.1",
+    "theo": "^8.1.5"
+  }
 }
