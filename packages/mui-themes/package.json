@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/mui-themes",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Mui custom themes based on @demo-ui-toolkit/design-tokens",
   "main": "index.js",
   "files": [
