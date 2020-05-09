@@ -31,5 +31,6 @@
     "react-dom": "^16.0.0",
     "webpack": "^4.5.0",
     "webpack-cli": "^3.2.1"
-  }
+  },
+  "gitHead": "6e6ae97838a46e0581682dc8702b6929dd12828f"
 }
