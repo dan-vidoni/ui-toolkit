@@ -5,8 +5,8 @@ module.exports = {
         "type": "light",
         "primary": {
             "main": colors['colorLightPrimaryMain'],
-            "light": "#3f51b5",
-            "dark": "#303f9f"
+            "light": colors['colorLightPrimaryLight'],
+            "dark": colors['colorLightPrimaryDark']
         }
     }
 }

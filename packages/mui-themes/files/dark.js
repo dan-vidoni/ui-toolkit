@@ -1,12 +1,12 @@
-var colors = require('@demo-ui-toolkit/design-tokens/dist/colors.commin.js');
+var colors = require('@demo-ui-toolkit/design-tokens/dist/colors.common.js');
 
 module.exports = {
     "palette": {
         "type": "dark",
         "primary": {
             "main": colors['colorDarkPrimaryMain'],
-            "light": "#a6d4fa",
-            "dark": "#648dae",
+            "light": colors['colorDarkPrimaryLight'],
+            "dark": colors['colorDarkPrimaryDark']
         }
     }
 }

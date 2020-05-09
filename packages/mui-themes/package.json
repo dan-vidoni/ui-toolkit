@@ -4,7 +4,8 @@
   "description": "Mui custom themes based on @demo-ui-toolkit/design-tokens",
   "main": "index.js",
   "files": [
-    "files/*"
+    "files/",
+    "index.js"
   ],
   "peerDependencies": {
     "@demo-ui-toolkit/design-tokens": "0.0.7"
