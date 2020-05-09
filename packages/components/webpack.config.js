@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: './src/sharedComponent/index.js',
+    entry: './src/sharedComponent/SharedComponent.jsx',
     output: {
         path: path.resolve('lib'),
         filename: 'SharedComponent.js',
