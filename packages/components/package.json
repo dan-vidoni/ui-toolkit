@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "build": "rollup -c",
     "prepublishOnly": "rm -rf lib && npm run build",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
@@ -28,6 +28,7 @@
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addons": "^5.3.18",
     "@storybook/react": "^5.3.18",
+    "@storybook/storybook-deployer": "^2.8.5",
     "babel-loader": "^8.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
