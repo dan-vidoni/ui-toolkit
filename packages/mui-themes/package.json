@@ -1,0 +1,12 @@
+{
+  "name": "@demo-ui-toolkit/mui-themes",
+  "version": "0.0.1",
+  "description": "Mui custom themes based on @demo-ui-toolkit/design-tokens",
+  "main": "index.js",
+  "files": [
+    "files/*"
+  ],
+  "peerDependencies": {
+    "@demo-ui-toolkit/design-tokens": "0.0.7"
+  }
+}
