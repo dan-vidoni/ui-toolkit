@@ -2,10 +2,11 @@
   "name": "@demo-ui-toolkit/components",
   "version": "1.0.0",
   "description": "shared components",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build": "rollup -c"
   },
   "author": "",
   "peerDependencies": {
@@ -22,7 +23,12 @@
     "@storybook/react": "^5.3.18",
     "babel-loader": "^8.1.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "rollup": "^2.8.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2"
   },
   "dependencies": {},
   "license": "MIT"

@@ -1,5 +1,3 @@
-import React from "react";
+import Button from '@material-ui/core/Button';
 
-export default function Button({ text }) {
-  return <button>{text}</button>;
-}
+export default Button;
