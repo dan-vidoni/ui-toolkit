@@ -1,0 +1,17 @@
+{
+  "name": "@demo-ui-toolkit/design-tokens",
+  "version": "0.0.1",
+  "description": "Colors, typography, size and spacing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "colors.json"
+  ],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  }
+}
