@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/components",
-  "version": "1.0.0",
+  "version": "0.0.3",
   "description": "react components",
   "main": "./lib/SharedComponent.js",
   "scripts": {
