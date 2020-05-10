@@ -1,0 +1,36 @@
+{
+    "global": {
+        "category": "typography",
+        "type": "typography"
+    },
+    "props": [
+        {
+            "name": "font-family",
+            "value": "Open Sans"
+        },
+        {
+            "name": "font-weight-regular",
+            "value": "400"
+        },
+        {
+            "name": "font-weight-medium",
+            "value": "500"
+        },
+        {
+            "name": "font-weight-bold",
+            "value": "700"
+        },
+        {
+            "name": "font-size-x",
+            "value": "1rem"
+        },
+        {
+            "name": "font-weight-m",
+            "value": "1.5rem"
+        },
+        {
+            "name": "font-weight-l",
+            "value": "2rem"
+        }
+    ]
+}

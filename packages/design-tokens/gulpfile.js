@@ -12,8 +12,10 @@ function theoWithFormat(path, format) {
         .pipe(dest('dist'))
 }
 
+var tokensFile = "tokens/tokens.json"
+
 exports.default = series(
-    () => theoWithFormat('colors.json', 'scss'),
-    () => theoWithFormat('colors.json', 'common.js'),
-    () => theoWithFormat('colors.json', 'html')
+    () => theoWithFormat(tokensFile, 'scss'),
+    () => theoWithFormat(tokensFile, 'common.js'),
+    () => theoWithFormat(tokensFile, 'html')
 );
