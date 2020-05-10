@@ -6,7 +6,8 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
-    "build": "rollup -c",
+    "clean": "rm -rf lib && mkdir lib",
+    "build": "npm run clean && cross-env NODE_ENV=production babel src/ --out-dir lib --copy-files --no-copy-ignored",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prepublishOnly": "rm -rf lib && npm run build && npm run deploy-storybook",
     "postpublish": "rm -rf lib/*"
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@demo-ui-toolkit/design-tokens": "^0.0.12",
@@ -34,6 +36,7 @@
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
     "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
     "html-loader": "^1.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -45,5 +48,8 @@
     "rollup-plugin-uglify": "^6.0.4"
   },
   "license": "MIT",
-  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e"
+  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e",
+  "dependencies": {
+    "@babel/cli": "^7.8.4"
+  }
 }
