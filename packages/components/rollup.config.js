@@ -9,7 +9,6 @@ const input = "./src/index.js";
 const minifyExtension = pathToFile => pathToFile.replace(/\.js$/, ".min.js");
 
 export default [
-  // CommonJS
   {
     input,
     output: {
