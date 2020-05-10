@@ -1,2 +1,2 @@
-exports.lightTheme = require('./files/light');
-exports.darkTheme = require('./files/dark');
+exports.lightTheme = require('./themes/light');
+exports.darkTheme = require('./themes/dark');
