@@ -7,8 +7,9 @@
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
     "build": "rollup -c",
-    "prepublishOnly": "rm -rf lib && npm run build",
-    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz"
+    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
+    "prepublishOnly": "rm -rf lib && npm run build && npm run deploy-storybook",
+    "postpublish": "rm -rf lib/*"
   },
   "author": "",
   "files": [
