@@ -3,3 +3,4 @@ export { default as MyButton } from "./components/MyButton/MyButton";
 export { default as CustomComponent } from "./components/CustomComponent/CustomComponent";
 export { default as Label } from "./components/Label/Label";
 export { default as InputText } from "./components/InputText/InputText";
+export { default as MyStyledButton } from "./components/MyStyledButton/MyStyledButton";

@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/components",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "description": "shared components",
   "main": "lib/index.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "/lib"
   ],
   "peerDependencies": {
+    "@demo-ui-toolkit/mui-themes": "0.0.7",
     "@material-ui/core": "4.9.13",
     "react": "16.13.1",
     "react-dom": "16.13.1"
@@ -43,5 +44,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.2",
     "rollup-plugin-uglify": "^6.0.4"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "gitHead": "7e3f10f3a8bf42b54d2edc3f395c78d2e595b5dc"
 }
