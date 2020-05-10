@@ -2,7 +2,7 @@
   "name": "@demo-ui-toolkit/design-tokens",
   "version": "0.0.11",
   "description": "Colors, typography, size and spacing",
-  "main": "dist/colors.common.js",
+  "main": "dist/tokens.common.js",
   "scripts": {
     "build": "gulp",
     "prepublishOnly": "npm run build"

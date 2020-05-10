@@ -7,7 +7,7 @@
     "themes/",
     "index.js"
   ],
-  "peerDependencies": {
+  "dependencies": {
     "@demo-ui-toolkit/design-tokens": "0.0.7"
   },
   "publishConfig": {
