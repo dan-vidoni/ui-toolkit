@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/mui-themes",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Mui custom themes based on @demo-ui-toolkit/design-tokens",
   "main": "index.js",
   "files": [
@@ -13,5 +13,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "e589bd11f3d5c8859c8f18c37ff2a4637dfecf6c"
+  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e"
 }

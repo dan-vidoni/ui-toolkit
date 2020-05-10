@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/components",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "shared components",
   "main": "lib/index.js",
   "scripts": {
@@ -45,5 +45,5 @@
     "rollup-plugin-uglify": "^6.0.4"
   },
   "license": "MIT",
-  "gitHead": "7e3f10f3a8bf42b54d2edc3f395c78d2e595b5dc"
+  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e"
 }
