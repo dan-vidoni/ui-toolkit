@@ -8,7 +8,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@demo-ui-toolkit/design-tokens": "0.0.7"
+    "@demo-ui-toolkit/design-tokens": "0.0.12"
   },
   "publishConfig": {
     "access": "public"

@@ -1,4 +1,4 @@
-var colors = require('@demo-ui-toolkit/design-tokens/dist/colors.common.js');
+var colors = require('@demo-ui-toolkit/design-tokens/dist/tokens.common.js');
 
 module.exports = {
     "palette": {
