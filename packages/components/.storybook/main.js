@@ -2,7 +2,8 @@ module.exports = {
   stories: ['../src/**/*.stories.js'],
   addons: [
     '@storybook/addon-knobs/register',
-    '@storybook/addon-actions/register'
+    '@storybook/addon-actions/register',
+    'storybook-addon-material-ui/register'
   ],
   webpackFinal: async (config) => {
     config.module.rules.push(

@@ -2,7 +2,8 @@
   "name": "demo-ui-toolkit",
   "private": true,
   "scripts": {
-    "lerna-publish": "lerna publish"
+    "lerna-publish": "lerna publish",
+    "lerna-bootstrap": "lerna bootstrap"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
