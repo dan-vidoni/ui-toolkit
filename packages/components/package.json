@@ -16,11 +16,13 @@
   "files": [
     "/lib"
   ],
+  "dependencies": {
+    "@demo-ui-toolkit/mui-themes": "0.0.12"
+  },
   "peerDependencies": {
-    "@demo-ui-toolkit/mui-themes": "0.0.12",
     "@material-ui/core": "4.9.13",
-    "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -29,7 +31,7 @@
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@demo-ui-toolkit/design-tokens": "^0.0.12",
-    "@material-ui/core": "4.9.13",
+    "@material-ui/core": "^4.9.13",
     "@storybook/addon-actions": "^5.3.18",
     "@storybook/addon-knobs": "^5.3.18",
     "@storybook/addon-links": "^5.3.18",
@@ -39,8 +41,8 @@
     "babel-loader": "^8.1.0",
     "cross-env": "^7.0.2",
     "html-loader": "^1.1.0",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "rollup": "^2.8.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
@@ -50,5 +52,5 @@
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   },
   "license": "MIT",
-  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e"
+  "gitHead": "eb426eeaa6d18cedc4e0b6ea0b959de536fa1fb3"
 }
