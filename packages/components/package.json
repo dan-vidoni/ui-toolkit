@@ -23,6 +23,7 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
@@ -49,8 +50,5 @@
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   },
   "license": "MIT",
-  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e",
-  "dependencies": {
-    "@babel/cli": "^7.8.4"
-  }
+  "gitHead": "87d7282f69a9caa74cdc2c574903a40f85ba049e"
 }
