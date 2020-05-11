@@ -1,7 +1,7 @@
 const styles = () => ({
     root: {
         '& > *': {
-            marginBottom: '20px',
+            marginBottom: '5px',
         },
     },
     textField: {
