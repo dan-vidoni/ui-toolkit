@@ -1,16 +1,27 @@
 import React from 'react';
+import { storiesOf } from '@storybook/react';
+import { muiTheme } from 'storybook-addon-material-ui';
 import Button from './Button';
+import { lightTheme, darkTheme } from '@demo-ui-toolkit/mui-themes'
 
-export default { title: 'Button' };
+const lightThemeExample = {
+  themeName: 'Light Theme',
+  ...lightTheme,
+  ...{
+    background: {
+      paper: "#000",
+      default: "#000"
+    }
+  }
+};
 
-export const primary = () => (
-  <Button variant="contained" color="primary">
-    Primary
-  </Button>
-);
+const darkThemeExample = {
+  themeName: 'Dark Theme',
+  ...darkTheme
+};
 
-export const secondary = () => (
-  <Button variant="contained" color="secondary">
-    Secondary
-  </Button>
-);
+storiesOf('Button', module)
+  .addDecorator(muiTheme([lightThemeExample, darkThemeExample]))
+  .add('Button example', () => (
+    <Button />
+  ));
