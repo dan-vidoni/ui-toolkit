@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/components",
-  "version": "1.0.31",
+  "version": "1.0.32",
   "description": "shared components",
   "scripts": {
     "storybook": "start-storybook -p 6006",
