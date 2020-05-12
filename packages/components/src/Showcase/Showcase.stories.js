@@ -1,10 +1,10 @@
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { muiTheme } from 'storybook-addon-material-ui';
-import WrapperPage from './WrapperPage';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { muiTheme } from 'storybook-addon-material-ui'
+import WrapperPage from './WrapperPage'
 import { lightTheme, darkTheme } from '@demo-ui-toolkit/mui-themes'
-import { Grid, Paper } from '@material-ui/core';
-import { InputText, Button, Card } from '../index';
+import Grid from '@material-ui/core/Grid'
+import { InputText, Button, Card } from '../index'
 
 import card1 from '../../public/card1.jpg'
 import card2 from '../../public/card2.jpg'

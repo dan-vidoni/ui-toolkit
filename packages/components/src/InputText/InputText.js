@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
-import { TextField } from '@material-ui/core'
+import TextField from '@material-ui/core/TextField'
 import styles from './InputText.styles'
 import Label from '../Label'
 

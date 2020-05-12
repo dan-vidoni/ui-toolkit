@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Card as MatUiCard } from '@material-ui/core'
+import MatUiCard from '@material-ui/core/Card'
 import { withStyles } from '@material-ui/styles'
 import styles from './Card.styles'
 
