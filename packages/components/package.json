@@ -7,14 +7,18 @@
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
     "clean": "rm -rf lib && mkdir lib",
-    "build": "npm run clean && cross-env NODE_ENV=production babel src/ --out-dir lib --copy-files --no-copy-ignored --ignore src/**/*.stories.js",
+    "prebuild": "rm -rf build",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:es",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts\" ./src --out-dir ./lib --no-copy-ignored --ignore \"**/*.stories.js\"",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts\" ./src --out-dir ./lib/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js --extensions \".js,.ts\" ./src --out-dir ./lib/es --no-copy-ignored  --ignore \"**/*.stories.js\"",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prepublishOnly": "rm -rf lib && npm run build && npm run deploy-storybook",
-    "postpublish": "rm -rf lib/*"
+    "postpublish": "rm -rf lib/"
   },
   "author": "",
   "files": [
-    "/lib"
+    "lib"
   ],
   "dependencies": {
     "@demo-ui-toolkit/mui-themes": "0.0.12"
@@ -28,6 +32,9 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.6",
+    "@babel/plugin-transform-object-assign": "^7.8.3",
+    "@babel/plugin-transform-runtime": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
     "@babel/preset-react": "^7.9.4",
     "@demo-ui-toolkit/design-tokens": "^0.0.12",
@@ -40,6 +47,8 @@
     "@storybook/react": "^5.3.18",
     "@storybook/storybook-deployer": "^2.8.5",
     "babel-loader": "^8.1.0",
+    "babel-plugin-optimize-clsx": "^2.6.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "cross-env": "^7.0.2",
     "html-loader": "^1.1.0",
     "react": "^16.13.1",
