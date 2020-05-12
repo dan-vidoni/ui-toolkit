@@ -2,13 +2,16 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Label from './Label';
+import WrapperPage from '../../examples/WrapperPage';
 
 storiesOf('Label', module)
     .addDecorator(withKnobs)
-    .add('LabelExample', () => {
+    .add('Label Example', () => {
         const labelText = text("text", "Label");
 
         return (
-            <Label text={labelText} />
+            <WrapperPage>
+                <Label text={labelText} />
+            </WrapperPage>
         );
     });

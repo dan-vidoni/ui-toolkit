@@ -10,7 +10,7 @@ const style = () => ({
     },
     photo: {
         width: '100%',
-        objectFit: 'contain',
+        objectFit: 'cover',
         height: '100%',
     },
     image: (props) => ({
@@ -18,7 +18,7 @@ const style = () => ({
         width: '100%',
         height: '100%',
         background: `url(${props.photo})`,
-        backgroundSize: 'contain',
+        backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
     }),

@@ -1,6 +1,6 @@
-const style = {
+const style = (theme) => ({
     label: {
-        color: 'rgba(0, 0, 0, 0.6)',
+        color: theme.palette.text.primary,
         fontSize: '12px',
         fontWeight: 'bold',
         letterSpacing: '2px',
@@ -8,6 +8,6 @@ const style = {
         textTransform: 'uppercase',
         fontFamily: "'Open Sans'"
     },
-}
+});
 
 export default style

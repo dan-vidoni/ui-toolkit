@@ -1,15 +1,15 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, text, files } from "@storybook/addon-knobs";
+import { withKnobs, text } from "@storybook/addon-knobs";
 import Card from './Card';
 
-import personPhoto from '../../../public/m7.png'
+import personPhoto from '../../../public/card3.jpg'
 
 storiesOf('Card', module)
     .addDecorator(withKnobs)
-    .add('Person Card Example', () => {
-        const titleText = text("title", "Max Tucson");
-        const subtitleText = text("subtitle", "Barcelona");
+    .add('Card Example', () => {
+        const titleText = text("title", "Sunny day");
+        const subtitleText = text("subtitle", "Maldive");
 
         return (
             <Card

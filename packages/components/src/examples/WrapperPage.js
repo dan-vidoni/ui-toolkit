@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles'
-import Button from '../components/Button/Button';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -11,13 +10,13 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const ExamplePage = () => {
+const WrapperPage = (props) => {
     const classes = useStyles();
     return (
         <div className={classes.root}>
-            <Button></Button>
+            {props.children}
         </div>
     );
 }
 
-export default ExamplePage;
+export default WrapperPage;
