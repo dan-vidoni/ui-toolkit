@@ -2,21 +2,17 @@
   "name": "@demo-ui-toolkit/components",
   "version": "1.0.31",
   "description": "shared components",
-  "main": "lib/index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
-    "clean": "rm -rf lib && mkdir lib",
     "prebuild": "rm -rf build",
     "build": "yarn build:cjs && yarn build:esm && yarn build:es && yarn build:copy-files",
-    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib --no-copy-ignored --ignore \"**/*.stories.js\"",
-    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib/es --no-copy-ignored  --ignore \"**/*.stories.js\"",
+    "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./build --no-copy-ignored --ignore \"**/*.stories.js\"",
+    "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./build/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
+    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./build/es --no-copy-ignored  --ignore \"**/*.stories.js\"",
     "build:copy-files": "node ./scripts/copy-files.js",
-    "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
-    "prepublishOnly": "rm -rf lib && npm run build && npm run deploy-storybook",
-    "release": "yarn build && npm publish build --tag latest",
-    "postpublish": "rm -rf lib/"
+    "prepublishOnly": "rm -rf build && npm run build && npm run deploy-storybook",
+    "postpublish": "rm -rf build"
   },
   "author": "",
   "dependencies": {
@@ -61,5 +57,5 @@
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   },
   "license": "MIT",
-  "gitHead": "eb426eeaa6d18cedc4e0b6ea0b959de536fa1fb3"
+  "gitHead": "388fe61568586db1b8335dc08d39f9be0551df51"
 }

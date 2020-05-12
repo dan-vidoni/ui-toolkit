@@ -3,7 +3,7 @@ const fse = require('fs-extra');
 const glob = require('glob');
 
 const packagePath = process.cwd();
-const libPath = path.join(packagePath, './lib');
+const buildPath = path.join(packagePath, './build');
 const srcPath = path.join(packagePath, './src');
 
 /**
@@ -32,6 +32,7 @@ async function createModulePackages({ from, to }) {
 
 async function createPackageFile() {
   const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
+  // remove these from the final package.json file
   const { nyc, scripts, devDependencies, workspaces, ...packageDataOther } = JSON.parse(
     packageData,
   );
@@ -41,7 +42,7 @@ async function createPackageFile() {
     main: './index.js',
     module: './esm/index.js'
   };
-  const targetPath = path.resolve(libPath, './package.json');
+  const targetPath = path.resolve(buildPath, './package.json');
   await fse.writeFile(targetPath, JSON.stringify(newPackageData, null, 2), 'utf8');
 
   return newPackageData;
@@ -50,7 +51,7 @@ async function createPackageFile() {
 async function run() {
   try {
     const packageData = await createPackageFile();
-    await createModulePackages({ from: srcPath, to: libPath });
+    await createModulePackages({ from: srcPath, to: buildPath });
   } catch (err) {
     console.error(err);
     process.exit(1);
