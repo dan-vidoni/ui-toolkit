@@ -22,6 +22,7 @@
     "postpublish": "rm -rf build"
   },
   "author": "",
+  "homepage": "https://dan-vidoni.github.io/ui-toolkit",
   "dependencies": {
     "@demo-ui-toolkit/mui-themes": "0.0.12"
   },

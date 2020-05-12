@@ -32,16 +32,30 @@ async function createModulePackages({ from, to }) {
 
 async function createPackageFile() {
   const packageData = await fse.readFile(path.resolve(packagePath, './package.json'), 'utf8');
-  // remove these from the final package.json file
-  const { nyc, scripts, devDependencies, workspaces, ...packageDataOther } = JSON.parse(
-    packageData,
-  );
+  const { 
+    author,
+    version,
+    description,
+    keywords,
+    repository,
+    license,
+    peerDependencies,
+    dependencies
+  } = JSON.parse(packageData);
+
   const newPackageData = {
-    ...packageDataOther,
     name: "@demo-ui-toolkit/components",
-    private: false,
     main: './index.js',
-    module: './esm/index.js'
+    module: './esm/index.js',
+    author,
+    version,
+    homepage,
+    description,
+    peerDependencies,
+    dependencies,
+    keywords,
+    repository,
+    license
   };
   const targetPath = path.resolve(buildPath, './package.json');
   await fse.writeFile(targetPath, JSON.stringify(newPackageData, null, 2), 'utf8');
