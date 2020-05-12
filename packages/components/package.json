@@ -1,12 +1,14 @@
 {
   "name": "@demo-ui-toolkit/components-template",
-  "version": "1.0.33",
+  "version": "1.0.34",
   "description": "shared components",
   "private": true,
   "engines": {
     "node": ">=10.18.0"
   },
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
