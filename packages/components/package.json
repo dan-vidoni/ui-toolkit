@@ -8,10 +8,11 @@
     "deploy-storybook": "storybook-to-ghpages",
     "clean": "rm -rf lib && mkdir lib",
     "prebuild": "rm -rf build",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:es",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:es && yarn build:copy-files",
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib/es --no-copy-ignored  --ignore \"**/*.stories.js\"",
+    "build:copy-files": "node ./scripts/copy-files.js",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prepublishOnly": "rm -rf lib && npm run build && npm run deploy-storybook",
     "postpublish": "rm -rf lib/"
