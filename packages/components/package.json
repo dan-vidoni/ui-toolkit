@@ -15,12 +15,10 @@
     "build:copy-files": "node ./scripts/copy-files.js",
     "postbuild": "npm pack && tar -xvzf *.tgz && rm -rf package *.tgz",
     "prepublishOnly": "rm -rf lib && npm run build && npm run deploy-storybook",
+    "release": "yarn build && npm publish build --tag latest",
     "postpublish": "rm -rf lib/"
   },
   "author": "",
-  "files": [
-    "lib"
-  ],
   "dependencies": {
     "@demo-ui-toolkit/mui-themes": "0.0.12"
   },

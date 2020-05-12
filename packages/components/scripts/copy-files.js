@@ -50,7 +50,6 @@ async function createPackageFile() {
 async function run() {
   try {
     const packageData = await createPackageFile();
-    console.log(packageData);
     await createModulePackages({ from: srcPath, to: libPath });
   } catch (err) {
     console.error(err);
