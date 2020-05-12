@@ -1,11 +1,9 @@
-const presets = process.env.BABEL_ENV === 'es'
-    ? []
-    : [
-        ['@babel/env', {
-            bugfixes: true,
-            modules: 'esm' == process.env.BABEL_ENV ? false : 'commonjs',
-        }]
-    ];
+const presets = [
+  ['@babel/env', {
+      bugfixes: true,
+      modules: 'esm' == process.env.BABEL_ENV ? false : 'commonjs',
+  }]
+];
 
 const plugins = [
   [

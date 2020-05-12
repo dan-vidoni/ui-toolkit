@@ -1,15 +1,19 @@
 {
-  "name": "@demo-ui-toolkit/components",
+  "name": "@demo-ui-toolkit/components-template",
   "version": "1.0.33",
   "description": "shared components",
+  "private": true,
+  "engines": {
+    "node": ">=10.18.0"
+  },
+  "files": ["lib"],
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
     "prebuild": "rm -rf build",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:es && yarn build:copy-files",
+    "build": "yarn build:cjs && yarn build:esm && yarn build:copy-files",
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./build --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./build/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
-    "build:es": "cross-env NODE_ENV=production BABEL_ENV=es babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./build/es --no-copy-ignored  --ignore \"**/*.stories.js\"",
     "build:copy-files": "node ./scripts/copy-files.js",
     "prepublishOnly": "rm -rf build && npm run build && npm run deploy-storybook",
     "postpublish": "rm -rf build"

@@ -9,7 +9,7 @@ const srcPath = path.join(packagePath, './src');
 /**
  * Puts a package.json into every immediate child directory of rootDir.
  * That package.json contains information about esm for bundlers so that imports
- * like import Typography from '@material-ui/core/Typography' are tree-shakeable.
+ * like import Button from '@demo-ui-toolkit/core/Button' are tree-shakeable.
  * @param {string} rootDir
  */
 async function createModulePackages({ from, to }) {
@@ -38,6 +38,7 @@ async function createPackageFile() {
   );
   const newPackageData = {
     ...packageDataOther,
+    name: "@demo-ui-toolkit/components",
     private: false,
     main: './index.js',
     module: './esm/index.js'
