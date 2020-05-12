@@ -5,19 +5,18 @@ import { action } from "@storybook/addon-actions";
 import InputText from './InputText';
 import WrapperPage from '../Showcase/WrapperPage';
 
-storiesOf('InputText', module)
+storiesOf('Components', module)
     .addDecorator(withKnobs)
-    .add('InputText Example', () => {
+    .add('InputText', () => {
         const labelText = text("label", "Label");
         const placeholderText = text("placeholder", "Placeholder");
-        const defaultValueText = text("defaultValue", "Hello");
 
         return (
             <WrapperPage>
                 <InputText
                     label={labelText}
                     placeholder={placeholderText}
-                    defaultValue={defaultValueText}
+                    defaultValue={"Hello"}
                     onChange={action("onChange")}
                     onEnter={action("onEnter")} />
             </WrapperPage>

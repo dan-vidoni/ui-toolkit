@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import Button from './Button';
 import WrapperPage from '../Showcase/WrapperPage';
 
-storiesOf('Button', module)
-  .add('Button example', () => (
+storiesOf('Components', module)
+  .add('Button', () => (
     <WrapperPage>
       <Button text="Themed button" />
     </WrapperPage>

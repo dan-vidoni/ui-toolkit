@@ -4,9 +4,9 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 import Label from './Label';
 import WrapperPage from '../Showcase/WrapperPage';
 
-storiesOf('Label', module)
+storiesOf('Components', module)
     .addDecorator(withKnobs)
-    .add('Label Example', () => {
+    .add('Label', () => {
         const labelText = text("text", "Label");
 
         return (
