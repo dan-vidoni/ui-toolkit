@@ -26,7 +26,7 @@ const darkThemeExample = {
     ...darkTheme
 };
 
-storiesOf('Example page', module)
+storiesOf('Showcase page', module)
     .addDecorator(muiTheme([lightThemeExample, darkThemeExample]))
     .add('Check your holiday', () => (
         <WrapperPage>

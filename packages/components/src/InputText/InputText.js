@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { withStyles } from '@material-ui/core/styles'
 import { TextField } from '@material-ui/core'
 import styles from './InputText.styles'
-import Label from '../Label/Label'
+import Label from '../Label'
 
 class InputText extends Component {
     handleChange = (event) => {

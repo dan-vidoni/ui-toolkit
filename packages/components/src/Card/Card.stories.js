@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 import { withKnobs, text } from "@storybook/addon-knobs";
 import Card from './Card';
 
-import personPhoto from '../../../public/card3.jpg'
+import personPhoto from '../../public/card3.jpg'
 
 storiesOf('Card', module)
     .addDecorator(withKnobs)
