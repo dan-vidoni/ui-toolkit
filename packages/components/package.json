@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/components-template",
-  "version": "1.0.34",
+  "version": "1.0.35",
   "description": "shared components",
   "engines": {
     "node": ">=10.18.0"
