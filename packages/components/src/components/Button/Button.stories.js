@@ -6,13 +6,7 @@ import { lightTheme, darkTheme } from '@demo-ui-toolkit/mui-themes'
 
 const lightThemeExample = {
   themeName: 'Light Theme',
-  ...lightTheme,
-  ...{
-    background: {
-      paper: "#000",
-      default: "#000"
-    }
-  }
+  ...lightTheme
 };
 
 const darkThemeExample = {

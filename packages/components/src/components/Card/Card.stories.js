@@ -10,7 +10,6 @@ storiesOf('Card', module)
     .add('Person Card Example', () => {
         const titleText = text("title", "Max Tucson");
         const subtitleText = text("subtitle", "Barcelona");
-        // const personPhotoFiles = files("photo", personPhoto)
 
         return (
             <Card

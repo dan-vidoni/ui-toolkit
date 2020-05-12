@@ -3,7 +3,8 @@ module.exports = {
   addons: [
     '@storybook/addon-knobs/register',
     '@storybook/addon-actions/register',
-    'storybook-addon-material-ui/register'
+    'storybook-addon-material-ui/register',
+    '@storybook/addon-storysource'
   ],
   webpackFinal: async (config) => {
     config.module.rules.push(
