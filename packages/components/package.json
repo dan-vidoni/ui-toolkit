@@ -1,10 +1,7 @@
 {
-  "name": "@demo-ui-toolkit/components-template",
+  "name": "@demo-ui-toolkit/components",
   "version": "1.0.35",
   "description": "shared components",
-  "engines": {
-    "node": ">=10.18.0"
-  },
   "files": [
     "lib"
   ],
@@ -63,5 +60,5 @@
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   },
   "license": "MIT",
-  "gitHead": "388fe61568586db1b8335dc08d39f9be0551df51"
+  "gitHead": "fa6025144b47d3b255d275b1d7a66d3b5f4375c2"
 }
