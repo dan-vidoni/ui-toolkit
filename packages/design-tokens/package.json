@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/design-tokens",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Colors, typography, size and spacing",
   "main": "dist/tokens.common.js",
   "scripts": {
