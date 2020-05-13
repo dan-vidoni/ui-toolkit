@@ -6,6 +6,6 @@ import WrapperPage from '../Showcase/WrapperPage';
 storiesOf('Components', module)
   .add('Button', () => (
     <WrapperPage>
-      <Button text="Themed button" />
+      <Button text="Hello button" />
     </WrapperPage>
   ));
