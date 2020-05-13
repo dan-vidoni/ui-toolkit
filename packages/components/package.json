@@ -18,7 +18,7 @@
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:copy-files": "node ./scripts/copy-files.js",
-    "prepublishOnly": "rm -rf build && npm run build && npm run deploy-storybook",
+    "prepublishOnly": "rm -rf build && npm run build",
     "postpublish": "rm -rf lib"
   },
   "author": "",
@@ -64,6 +64,5 @@
     "rollup-plugin-uglify": "^6.0.4",
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   },
-  "license": "MIT",
-  "gitHead": "a0a46e1a9b565c13b88635f3038e40c93bb8a4d8"
+  "license": "MIT"
 }
