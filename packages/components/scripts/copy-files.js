@@ -12,11 +12,10 @@ const srcPath = path.join(packagePath, './src');
  * like import Button from '@demo-ui-toolkit/components/lib/Button' are tree-shakeable.
  */
 async function createModulePackages({ from, to }) {
-  const directoryPackages = glob.sync('*/index.js', { cwd: from }).map(path.dirname);    
+  const directoryPackages = glob.sync('*/index.js', { cwd: from }).map(path.dirname);
   await Promise.all(
     directoryPackages.map(async (directoryPackage) => {
       const packageJson = {
-        sideEffects: false,
         module: path.join('../esm', directoryPackage, 'index.js')
       };
       const packageJsonPath = path.join(to, directoryPackage, 'package.json');

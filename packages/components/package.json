@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 6006",
     "deploy-storybook": "storybook-to-ghpages",
     "prebuild": "rm -rf lib",
-    "build": "yarn build:cjs && yarn build:esm && yarn build:copy-files",
+    "build": "npm run build:cjs && npm run build:esm && npm run build:copy-files",
     "build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:esm": "cross-env NODE_ENV=production BABEL_ENV=esm babel --config-file ./babel.config.js --extensions \".js,.ts,.jsx,.tsx\" ./src --out-dir ./lib/esm --no-copy-ignored --ignore \"**/*.stories.js\"",
     "build:copy-files": "node ./scripts/copy-files.js",
@@ -60,5 +60,5 @@
     "storybook-addon-material-ui": "^0.9.0-alpha.21"
   },
   "license": "MIT",
-  "gitHead": "43746de5f52ed0029bbf2dc73781c4150c66efc0"
+  "gitHead": "a0a46e1a9b565c13b88635f3038e40c93bb8a4d8"
 }
