@@ -2,6 +2,11 @@
   "name": "@demo-ui-toolkit/components",
   "version": "1.0.42",
   "description": "shared components",
+  "keywords": [
+    "react",
+    "react-component",
+    "material-ui"
+  ],
   "files": [
     "lib"
   ],
