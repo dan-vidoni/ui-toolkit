@@ -1,6 +1,6 @@
 {
   "name": "@demo-ui-toolkit/components",
-  "version": "1.0.45",
+  "version": "1.0.50",
   "description": "shared components",
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
   "author": "",
   "homepage": "https://dan-vidoni.github.io/ui-toolkit",
   "dependencies": {
-    "@demo-ui-toolkit/mui-themes": "^0.0.14"
+    "@demo-ui-toolkit/mui-themes": "^0.0.50"
   },
   "peerDependencies": {
     "@material-ui/core": "4.9.13",
